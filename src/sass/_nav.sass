@@ -3,6 +3,7 @@
     height: 75px
     @include flex(row, space-between, center)
     background-image: linear-gradient(rgba(255, 255, 255, 0.067), rgba(255, 255, 255, 0.067))
+    padding: 0 25px
 
     & > .navbar-search
         @include flex(row, flex-start, center)
@@ -24,7 +25,6 @@
     & > .navbar-options
         @include flex(row, flex-end, center)
         gap: 25px
-        padding-right: 25px
         width: 25%
 
         & > .option-icon
