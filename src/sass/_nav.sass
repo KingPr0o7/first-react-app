@@ -1,0 +1,38 @@
+.navbar
+    width: 100%
+    height: 75px
+    @include flex(row, space-between, center)
+    background-image: linear-gradient(rgba(255, 255, 255, 0.067), rgba(255, 255, 255, 0.067))
+
+    & > .navbar-search
+        @include flex(row, flex-start, center)
+        gap: 10px
+        width: 25%
+
+        & > #search-logo
+            width: 64px
+            height: 64px
+
+        & > #search-input
+            width: 280px
+            padding: 10px
+            border-radius: 10px
+            background-color: rgba(255, 255, 255, 0.133)
+            height: 40px
+            border: none
+
+    & > .navbar-options
+        @include flex(row, flex-end, center)
+        gap: 25px
+        padding-right: 25px
+        width: 25%
+
+        & > .option-icon
+            width: 32px
+            height: 32px
+            fill: transparent
+            storke: blue
+
+            &:hover
+                cursor: pointer
+                fill: white

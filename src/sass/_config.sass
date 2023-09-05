@@ -1,0 +1,29 @@
+// NP-UI
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap')
+
+$text: #FFFFFF
+$background: #161618
+$primary: #0E4EC5
+$secondary: #1C242F
+$accent: #3072CF
+
+//
+// Mixins
+//
+
+@mixin flex($direction, $justify, $align)
+	display: flex
+	flex-direction: $direction
+	justify-content: $justify
+	align-items: $align
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	color: $text
+	font-family: 'Rubik', sans-serif
+	font-weight: 400
+
+body 
+	background-color: $background

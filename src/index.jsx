@@ -1,12 +1,14 @@
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import './sass/app.css'
 
-import App from './App';
+import Movies from './Movies';
+import Nav from './Nav';
 
 const root = createRoot(document.getElementById('root'));
 root.render(
     <StrictMode>
-        <App />
+        <Nav />
     </StrictMode>
 )
 
